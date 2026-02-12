@@ -1,14 +1,14 @@
 /* ===== BASE RESET & VARIABLES ===== */
 :root {
-  --primary: #7C3AED;
-  --primary-dark: #5B21B6;
-  --accent: #34D399;
-  --bg-light: #F5F3FF;
+  --primary: #4A5568;
+  --primary-dark: #2D3748;
+  --accent: #A0AEC0;
+  --bg-light: #F7FAFC;
   --bg-white: #ffffff;
-  --text-dark: #1E1B4B;
-  --text-muted: #6B7280;
-  --border: #E5E1F0;
-  --shadow: 0 2px 12px rgba(124, 58, 237, 0.08);
+  --text-dark: #1A202C;
+  --text-muted: #718096;
+  --border: #E2E8F0;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   --radius: 12px;
   --transition: 0.3s ease;
 }
