@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew & Bean – Menu</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><span>☕</span> Brew &amp; Bean</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== MENU SECTION ===== -->
+  <section class="section">
+    <div class="section-title">
+      <h2>Our Menu</h2>
+      <p>Freshly made, just for you</p>
+    </div>
+    <div class="menu-grid">
+
+      <!-- CLICKABLE PRODUCT (tracked by GA4) -->
+      <div class="menu-card clickable" data-product="Caramel Macchiato" data-price="$5.50">
+        <div class="menu-card-img">🥤</div>
+        <div class="menu-card-body">
+          <h3>Caramel Macchiato</h3>
+          <div class="price">$5.50</div>
+          <p>Espresso with steamed milk and a rich caramel drizzle. Our most popular drink — click to learn more!</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-card-img">☕</div>
+        <div class="menu-card-body">
+          <h3>Classic Espresso</h3>
+          <div class="price">$3.00</div>
+          <p>A bold, concentrated shot of pure coffee perfection. Simple and timeless.</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-card-img">🧋</div>
+        <div class="menu-card-body">
+          <h3>Iced Latte</h3>
+          <div class="price">$4.75</div>
+          <p>Smooth espresso poured over cold milk and ice. Refreshing on any day.</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-card-img">🍵</div>
+        <div class="menu-card-body">
+          <h3>Matcha Latte</h3>
+          <div class="price">$5.25</div>
+          <p>Ceremonial-grade matcha whisked with creamy oat milk. Earthy and smooth.</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-card-img">🫖</div>
+        <div class="menu-card-body">
+          <h3>Chai Tea Latte</h3>
+          <div class="price">$4.50</div>
+          <p>Aromatic spiced chai blended with steamed milk. Warm and comforting.</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-card-img">🍰</div>
+        <div class="menu-card-body">
+          <h3>Blueberry Muffin</h3>
+          <div class="price">$3.50</div>
+          <p>Freshly baked with real blueberries. The perfect companion to your coffee.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT DETAIL MODAL ===== -->
+  <div class="modal-overlay" id="productModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <div class="modal-icon" id="modalIcon">🥤</div>
+      <h2 id="modalName">Caramel Macchiato</h2>
+      <div class="modal-price" id="modalPrice">$5.50</div>
+      <p class="modal-desc" id="modalDesc">Description here</p>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>&copy; 2026 Brew &amp; Bean Coffee Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
